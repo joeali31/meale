@@ -1,1 +1,24 @@
-<p>meales works!</p>
+<h1 class="demo  text-4xl font-bold    bg-clip-text text-transparent" >was triggered by this import</h1>
+
+<ul class="flex flex-wrap border-b border-gray-200 mt-8 gap-6">
+    <li class="     px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 " >All</li>
+    @if(this.mealcateg){
+        @for(c of mealcateg; track $index ){
+            <li class="     px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 " >{{c.strCategory}}</li>
+        }
+    }
+    
+</ul>
+
+
+<div class="meals mt-24 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-20 " >
+
+    <div class="bg-white rounded-[35px] p-12 pb-4 text-center group hover:shadow-xl hover:scale-105 transition-all duration-300">
+        <img src="images/g046bb1663960946.jpg" class="w-full shadow-xl mx-auto drop-shadow-xl rounded-full -translate-y-20 transition-all duration-700 group-hover:rotate-[360deg] " alt="">
+        <h3 class="text-[20px] font-semibold -mt-12">Sushi</h3>
+        <h5 class="text-emerald-600"><i class="fa-solid fa-earth-americas me-1"></i> turky</h5>
+        <button type="button" class="text-white mt-4  bg-green-500 hover:bg-green-600 hover:scale-105 focus:outline-none transition-all duration-300   font-medium rounded-full text-[16px] text-sm px-7 py-2.5 text-center  dark:bg-green-600 dark:hover:bg-green-600 "> View Recipe</button>
+
+    </div>
+
+</div>
